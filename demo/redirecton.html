@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Redirection demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <p id="welcomeText">Hello , Welcome to my you tube channel !!!</p>
+    <input type="button" value="Redirect to next" onclick="redirectMe()" />
+    <input type="button" value="Reload me" onclick="reloadMe()" />
+    <input type="button" value="Clear" onclick="clearMe()" />
+    <script>
+      function redirectMe() {
+        window.location = "https://www.google.com";
+      }
+
+      function reloadMe() {
+        window.location.reload();
+      }
+
+      function clearMe() {
+        document.getElementById('welcomeText').innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
